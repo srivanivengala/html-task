@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Emmets</title>
+    </head>
+<body>
+  <center>  <table border="2" cellspacing="5" cellpadding="10">
+        <tr>
+            <th><center>Emmets</th>
+            <th><center></center>Discription</th>
+        </tr>
+        <tr>
+           <td><center>Child: ></td>
+           <td><p>Explanation: An element that is directly
+             below and connected to an element in the document tree.</p>
+            Example: <b>html>head>title</b></p>
+            <pre>          < html >
+                 < head >
+                 < title >< /title >
+                 < /head >
+            < /html ></pre>
+           </td>
+        </tr>
+        <tr>
+            <td><center>sibling: +</center></td>
+            <td>Explanation: Shares same parent with the element
+                <p>Example: <b>div+p+bq</b></p>
+                <pre>           < div>< /div>
+             < p>< /p>
+             < blockquote>< /blockquote></pre>
+            </td>
+        </tr>
+        <tr><td>Climb-up: ^</td>
+            <td >Explanation: It is used to moves up one level in hierarchy,allowing us to add sibling elements to the parent elements</li>
+                <br><br>Example : <b>div+div>p>span+em^bq <br></b>
+              <pre>            < div>< /div>
+                < div>
+                    < p>< span>< /span>< em>< /em p>
+                    < blockquote>< /blockquote>
+                < /div></pre>
+        Example : <b>div+div>p>span+em^^bq</b>
+        <pre>                < div> < /div>
+                < div>
+                     < p>< span>< /span>< em>< /em>< /p>
+                < /div>
+                < blockquote>< /blockquote></pre>
+             <td>
+        </tr>
+        <tr><td><b>Multiplication:*</td>
+            <td><p>Explanation: It is used to get multiple elements</li></p>
+                Example : <b>ul>li*5 <br></b>
+              <pre>         < ul>
+                < li>< /li>
+                < li>< /li>
+                < li>< /li>
+                < li>< /li>
+                < li>< /li>
+            < /ul></pre>
+            </td>
+        </tr>
+        <tr><td><b>Item numbering: $</td>
+            <td>Example:<b> ul>li.item$*5 <br>
+              <pre>
+                < ul>
+                    < li class="item1">< /li>
+                    < li class="item2">< /li>
+                    < li class="item3">< /li>
+                    < li class="item4">< /li>
+                    < li class="item5">< /li>
+                < /ul> </pre>
+            </td>
+        </tr>
+        <tr><td><b>Grouping: ()</td>
+            <td><b>Example : div>(header>ul>li*2>a)+footer>p  <br>
+              <pre>       < div>
+            < header>
+                < ul>
+                    < li>< a href="">< /a>< /li>
+                    < li>< a href="">< /a>< /li>
+                < /ul>
+            < /header>
+            < footer>
+                < p>< /p>
+            < /footer>
+        < /div></pre>
+            </td>
+        </tr>
+        <tr><td><b>Text: {}</td>
+            <td>To create text with in the element</li>
+                <br>Example :<b> a{Click me} <br>
+              <pre>< a href="">Click me< /a></pre>
+              <b><Example :p>{Click }+a{here}+{ to continue}  <br>
+                <pre>< p>Click < a href="">here< /a> to continue< /p></pre>
+            </td>
+        </tr>
+        <tr><td><b>Custom attributes: []</td>
+               <td>To show custom attributes</br>
+               <b>Example : td[rowspan=2 colspan=3 title]
+                <pre>< td rowspan="2" colspan="3" title="">< /td></pre></td>
+        </tr>
+    </table></center>
+</body>
+</html>
